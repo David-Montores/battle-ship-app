@@ -1,0 +1,41 @@
+.fila {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+}
+
+.border-left {
+    border-left: 2px solid #ccc;
+}
+
+.border-top {
+    border-top: 2px solid #ccc;
+}
+
+.columna {
+    border-right: 2px solid #ccc;
+    padding: 1rem 0;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.filas-name {
+    position: absolute;
+    left: -1.2rem;
+    top:25%;
+}
+
+.pointer {
+    cursor: pointer;
+}

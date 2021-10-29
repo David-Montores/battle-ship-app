@@ -1,0 +1,21 @@
+<div class="container">
+
+    <ng-container *ngFor="let filas of tablero | keyvalue; let iFila = index">
+        <div class="fila" [ngClass]="{'border-top': iFila === 0}">
+
+            <span class="filas-name">{{filas.key}}</span>
+
+            <div class="row">
+                <ng-container *ngFor="let columna of filas.value; let iCol = index">
+                    <div class="columna pointer" [ngClass]="{'border-left': iCol === 0}"
+                        (click)='checkPosition(columna, iCol, iFila)'>
+                        {{columna}}
+                    </div>
+                </ng-container>
+            </div>
+
+
+        </div>
+    </ng-container>
+
+</div>
