@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    --borders: #dbdbdb;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+    padding-top: 5rem;
+    width: 55%;
+    margin: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}

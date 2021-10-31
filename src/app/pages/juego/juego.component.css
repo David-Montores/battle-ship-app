@@ -1,0 +1,62 @@
+.fila {
+    width: 51rem;
+    margin: auto;
+    position: relative;
+    border-bottom: 2px solid var(--borders);
+}
+
+.border-left {
+    border-left: 2px solid var(--borders);
+}
+
+.border-top {
+    border-top: 2px solid var(--borders);
+}
+
+.columna {
+    position: relative;
+    border-right: 2px solid var(--borders);
+    /* padding: 2.5rem 0; */
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    max-width: 5rem;
+    min-height: 5rem;
+    max-height: 5rem;
+    background-color: #006994;
+}
+
+.hit {
+    background-color: #f34a4a !important;
+}
+
+.equis {
+    font-size: 2rem;
+}
+
+.miss {
+    background-color: #053244 !important;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.filas-name {
+    position: absolute;
+    left: -1.2rem;
+    top: 25%;
+}
+
+.col-name {
+    position: absolute;
+    top: -1.2rem;
+    /* top: 25%; */
+}
+
+.pointer {
+    cursor: pointer;
+}

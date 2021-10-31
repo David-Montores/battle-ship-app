@@ -1,21 +1,18 @@
-<div class="container">
+<div class="container text-align-center">
 
-    <ng-container *ngFor="let filas of tablero | keyvalue; let iFila = index">
-        <div class="fila" [ngClass]="{'border-top': iFila === 0}">
+    <h1>&#10060; Batalla naval &#10060;</h1>
 
-            <span class="filas-name">{{filas.key}}</span>
+    <h4>Selecciona la dificultad</h4>
 
-            <div class="row">
-                <ng-container *ngFor="let columna of filas.value; let iCol = index">
-                    <div class="columna pointer" [ngClass]="{'border-left': iCol === 0}"
-                        (click)='checkPosition(columna, iCol, iFila)'>
-                        {{columna}}
-                    </div>
-                </ng-container>
-            </div>
-
-
-        </div>
-    </ng-container>
+    <button class="btn-dificultad" mat-flat-button color="accent" (click)="cambiarDificultad('Custom')">Customizado</button>
+    <button class="btn-dificultad" mat-flat-button color="accent" (click)="cambiarDificultad('Infinity')">
+        Fácil (turnos infinitos)
+    </button>
+    <button class="btn-dificultad" mat-flat-button color="accent" (click)="cambiarDificultad(80)">
+        Medio (80 turnos)
+    </button>
+    <button class="btn-dificultad" mat-flat-button color="accent" (click)="cambiarDificultad(50)">
+        Difícil (50 turnos)
+    </button>
 
 </div>

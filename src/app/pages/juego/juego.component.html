@@ -1,0 +1,32 @@
+<div class="container">
+
+    <ng-container *ngFor="let filas of configS.tablero | keyvalue; let iFila=
+        index">
+
+        <div class="fila" [ngClass]="{'border-top': iFila === 0}">
+
+            <span class="filas-name">{{filas.key}}</span>
+
+            <div class="row">
+                <ng-container *ngFor="let columna of filas.value; let iCol=
+                    index">
+
+
+                    <div [id]="filas.key + iCol" class="columna" [ngClass]="{'border-left': iCol === 0, 'pointer':
+                        configS.turnos> 0}" (click)='checkPosition(columna,
+                        filas.key, iCol)'>
+
+                        <span [id]="'equis'+filas.key + iCol" class="equis"></span>
+                        <ng-container *ngIf="iFila === 0">
+                            <span class="col-name">{{iCol + 1}}</span>
+                        </ng-container>
+
+                    </div>
+                </ng-container>
+            </div>
+
+
+        </div>
+    </ng-container>
+
+</div>
